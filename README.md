@@ -27,6 +27,9 @@ flowchart LR
   API --> IMG[Pillow + NumPy image conversion]
   API --> AI[OpenAI Responses API]
   UI --> PNG[Transparent PNG export]
+
+  classDef grey fill:#d1d5db,stroke:#4b5563,stroke-width:1.5px,color:#111827
+  class U,UI,C,L,API,IMG,AI,PNG grey
 ```
 
 The browser handles drawing, rendering, collections and PNG export. The API converts images and generates structured sprite palettes and pixel grids.
