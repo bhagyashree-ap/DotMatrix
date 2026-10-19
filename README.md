@@ -12,9 +12,9 @@ DotMatrix is a pixel art studio for drawing sprites, turning images into editabl
 
 ## Tech stack
 
-- **Frontend:** React, TypeScript, Vite, HTML Canvas
-- **Backend:** FastAPI, Pillow, NumPy
-- **AI:** OpenAI API with `gpt-6-luna`
+- Frontend: React, TypeScript, Vite, HTML Canvas
+- Backend: Python, FastAPI, Pillow, NumPy for image conversion
+- OpenAI Responses API via the Python SDK, using gpt-6-luna
 
 ## System design
 
