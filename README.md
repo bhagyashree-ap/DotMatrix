@@ -1,22 +1,21 @@
 # DotMatrix Studio
 
-DotMatrix is a pixel-art studio for drawing sprites, turning images into editable pixel grids, and exporting transparent PNGs. Artwork collections stay in the browser on the user’s device.
+DotMatrix is a pixel art studio for drawing sprites, turning images into editable pixel grids and exporting transparent PNGs. Artwork collections stay in the browser on the user’s device.
 
 ## Features
 
 - Edit art as pixels, crochet stitches, or round beads.
 - Import images as editable grids, with browser-based conversion if the API is unavailable.
 - Choose from 24 starter colors or make custom shades with the color wheel and HEX input.
-- Review suggested one-pixel repairs; accept, undo, or redo each change.
+- Review suggested one-pixel repairs; accept, undo or redo each change.
 - Generate editable sprites from text with OpenAI.
 
 ## Tech stack
 
 - **Frontend:** React, TypeScript, Vite, HTML Canvas
 - **Backend:** FastAPI, Pillow, NumPy
-- **AI:** OpenAI API with `gpt-6-luna`; requires an API key and billing.
-- **Storage:** Browser `localStorage`; no account or cloud sync.
-
+- **AI:** OpenAI API with `gpt-6-luna`
+- 
 ## Run locally
 
 Requirements: Node.js 18+ and Python 3.9+.
@@ -55,4 +54,4 @@ flowchart LR
   UI --> PNG[Transparent PNG export]
 ```
 
-The browser handles drawing, rendering, collections, and PNG export. The API converts images and generates structured sprite palettes and pixel grids. Generated art remains editable in the browser.
+The browser handles drawing, rendering, collections and PNG export. The API converts images and generates structured sprite palettes and pixel grids.
