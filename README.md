@@ -55,3 +55,7 @@ flowchart LR
 ```
 
 The browser handles drawing, rendering, collections and PNG export. The API converts images and generates structured sprite palettes and pixel grids.
+
+## Deploy to Vercel
+
+Import `bhagyashree-ap/DotMatrix`, use `./` as the root directory, and set the project framework to **Services**. `vercel.json` routes `/api/*` to FastAPI and other paths to Vite. Set `OPENAI_API_KEY` in Vercel’s environment variables to enable AI sprite generation. Image conversion works without it.
