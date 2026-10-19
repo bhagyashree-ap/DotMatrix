@@ -1,5 +1,6 @@
 {
   "name": "dotmatrix-studio",
+  "description": "A browser-based pixel-art studio for drawing, converting, and collecting editable sprites.",
   "private": true,
   "version": "0.1.0",
   "type": "module",
