@@ -4,11 +4,11 @@ DotMatrix is a pixel art studio for drawing sprites, turning images into editabl
 
 ## Features
 
-- Edit art as pixels, crochet stitches, or round beads.
-- Import images as editable grids, with browser-based conversion if the API is unavailable.
-- Choose from 24 starter colors or make custom shades with the color wheel and HEX input.
-- Review suggested one-pixel repairs; accept, undo or redo each change.
-- Generate editable sprites from text with OpenAI.
+- Switch between pixel, crochet and bead styles.
+- Turn photos into editable pixel art.
+- Choose from 24 colors or generate your own.
+- Review pixel issues and choose which ones to fix.
+- Describe an idea and generate an editable sprite with OpenAI.
 
 ## Tech stack
 
