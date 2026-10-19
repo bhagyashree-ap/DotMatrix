@@ -16,31 +16,6 @@ DotMatrix is a pixel art studio for drawing sprites, turning images into editabl
 - **Backend:** FastAPI, Pillow, NumPy
 - **AI:** OpenAI API with `gpt-6-luna`
 
-## Run locally
-
-Requirements: Node.js 18+ and Python 3.9+.
-
-```sh
-npm install
-npm run dev
-```
-
-Open the URL printed by Vite, usually `http://localhost:5173`.
-
-## Start the API
-
-In a second terminal:
-
-```sh
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r backend/requirements.txt
-export OPENAI_API_KEY="your_api_key_here"
-uvicorn backend.main:app --reload --port 8000
-```
-
-Vite forwards `/api` requests to the backend. AI generation uses `gpt-6-luna`; set `OPENAI_MODEL` to use another model available to your API account. Keep the API key on the backend and out of source control. Image import uses browser conversion if the API is unavailable.
-
 ## System design
 
 ```mermaid
@@ -55,7 +30,3 @@ flowchart LR
 ```
 
 The browser handles drawing, rendering, collections and PNG export. The API converts images and generates structured sprite palettes and pixel grids.
-
-## Deploy to Vercel
-
-Import `bhagyashree-ap/DotMatrix`, use `./` as the root directory, and set the project framework to **Services**. `vercel.json` routes `/api/*` to FastAPI and other paths to Vite. Set `OPENAI_API_KEY` in Vercel’s environment variables to enable AI sprite generation. Image conversion works without it.
